@@ -1,179 +1,415 @@
 {
-    "users": [
-    { "id": 1, "email": "john.doe@example.com", "firstName": "John", "lastName": "Doe", "password": "password123" },
-    { "id": 2, "email": "jane.smith@example.com", "firstName": "Jane", "lastName": "Smith", "password": "securepass456" },
-    { "id": 3, "email": "alice.brown@example.com", "firstName": "Alice", "lastName": "Brown", "password": "alice2024" },
-    { "id": 4, "email": "bob.jones@example.com", "firstName": "Bob", "lastName": "Jones", "password": "bobthebuilder" },
-    { "id": 5, "email": "charlie.johnson@example.com", "firstName": "Charlie", "lastName": "Johnson", "password": "charlie2024" },
-    { "id": 6, "email": "diana.roberts@example.com", "firstName": "Diana", "lastName": "Roberts", "password": "diana1234" },
-    { "id": 7, "email": "emily.davis@example.com", "firstName": "Emily", "lastName": "Davis", "password": "emilyrocks" },
-    { "id": 8, "email": "frank.miller@example.com", "firstName": "Frank", "lastName": "Miller", "password": "miller2024" },
-    { "id": 9, "email": "george.clark@example.com", "firstName": "George", "lastName": "Clark", "password": "georgeclark!" },
-    { "id": 10, "email": "helen.white@example.com", "firstName": "Helen", "lastName": "White", "password": "helen123" },
-    { "id": 11, "email": "ian.moore@example.com", "firstName": "Ian", "lastName": "Moore", "password": "ianrocks" },
-    { "id": 12, "email": "jack.hall@example.com", "firstName": "Jack", "lastName": "Hall", "password": "jackattack" }
+  "users": [
+    {
+      "id": 1,
+      "email": "john.doe@example.com",
+      "firstName": "John",
+      "lastName": "Doe",
+      "password": "password123"
+    },
+    {
+      "id": 2,
+      "email": "jane.smith@example.com",
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "password": "securepass456"
+    },
+    {
+      "id": 3,
+      "email": "alice.brown@example.com",
+      "firstName": "Alice",
+      "lastName": "Brown",
+      "password": "alice2024"
+    },
+    {
+      "id": 4,
+      "email": "bob.jones@example.com",
+      "firstName": "Bob",
+      "lastName": "Jones",
+      "password": "bobthebuilder"
+    },
+    {
+      "id": 5,
+      "email": "charlie.johnson@example.com",
+      "firstName": "Charlie",
+      "lastName": "Johnson",
+      "password": "charlie2024"
+    },
+    {
+      "id": 6,
+      "email": "diana.roberts@example.com",
+      "firstName": "Diana",
+      "lastName": "Roberts",
+      "password": "diana1234"
+    },
+    {
+      "id": 7,
+      "email": "emily.davis@example.com",
+      "firstName": "Emily",
+      "lastName": "Davis",
+      "password": "emilyrocks"
+    },
+    {
+      "id": 8,
+      "email": "frank.miller@example.com",
+      "firstName": "Frank",
+      "lastName": "Miller",
+      "password": "miller2024"
+    },
+    {
+      "id": 9,
+      "email": "george.clark@example.com",
+      "firstName": "George",
+      "lastName": "Clark",
+      "password": "georgeclark!"
+    },
+    {
+      "id": 10,
+      "email": "helen.white@example.com",
+      "firstName": "Helen",
+      "lastName": "White",
+      "password": "helen123"
+    },
+    {
+      "id": 11,
+      "email": "ian.moore@example.com",
+      "firstName": "Ian",
+      "lastName": "Moore",
+      "password": "ianrocks"
+    },
+    {
+      "id": 12,
+      "email": "jack.hall@example.com",
+      "firstName": "Jack",
+      "lastName": "Hall",
+      "password": "jackattack"
+    },
+    {
+      "id": 13,
+      "email": "austin.wright@example.com",
+      "firstName": "Austin",
+      "lastName": "Wright",
+      "password": "austinrocks"
+    },
+    {
+      "id": 14,
+      "email": "oliver.thompson@example.com",
+      "firstName": "Oliver",
+      "lastName": "Thompson",
+      "password": "oliverthegreat"
+    },
+    {
+      "id": 15,
+      "email": "sophia.bell@example.com",
+      "firstName": "Sophia",
+      "lastName": "Bell",
+      "password": "sophiarules"
+    }
   ],
-    "groups": [
-      { "id": 1, "name": "Family" },
-      { "id": 2, "name": "Friends" }
-    ],
-    "userGroups": [
-      { "id": 1, "userId": 1, "groupId": 1 },
-      { "id": 2, "userId": 1, "groupId": 2 },
-      { "id": 3, "userId": 2, "groupId": 1 },
-      { "id": 4, "userId": 3, "groupId": 2 },
-      { "id": 5, "userId": 4, "groupId": 1 },
-      { "id": 6, "userId": 4, "groupId": 2 },
-      { "id": 7, "userId": 5, "groupId": 1 },
-      { "id": 8, "userId": 6, "groupId": 2 },
-      { "id": 9, "userId": 7, "groupId": 1 },
-      { "id": 10, "userId": 8, "groupId": 2 },
-      { "id": 11, "userId": 9, "groupId": 1 },
-      { "id": 12, "userId": 10, "groupId": 1 },
-      { "id": 13, "userId": 11, "groupId": 2 },
-      { "id": 14, "userId": 12, "groupId": 1 },
-      { "id": 15, "userId": 12, "groupId": 2 }
-    ],
-    "categories": [
-      { "id": 1, "name": "Birthday" },
-      { "id": 2, "name": "Meeting" },
-      { "id": 3, "name": "Appointment" },
-      { "id": 4, "name": "Vacation" },
-      { "id": 5, "name": "Party" }
-    ],
-    "events": [
-      { 
-        "id": 1,
-        "title": "John's Birthday",
-        "description": "Celebrating John's 30th birthday",
-        "startTime": "2024-09-27T18:00:00",
-        "endTime": "2024-09-27T22:00:00",
-        "createdAt": "2024-09-01T12:00:00",
-        "updatedAt": "2024-09-15T08:00:00",
-        "userId": 1,
-        "categoryId": 1
-      },
-      { 
-        "id": 2,
-        "title": "Project Meeting",
-        "description": "Discussing the final project details",
-        "startTime": "2024-09-28T10:00:00",
-        "endTime": "2024-09-28T12:00:00",
-        "createdAt": "2024-09-10T09:00:00",
-        "updatedAt": "2024-09-25T15:00:00",
-        "userId": 2,
-        "categoryId": 2
-      },
-      {
-        "id": 3,
-        "title": "Doctor's Appointment",
-        "description": "Routine checkup",
-        "startTime": "2024-10-01T09:00:00",
-        "endTime": "2024-10-01T10:00:00",
-        "createdAt": "2024-09-20T11:00:00",
-        "updatedAt": "2024-09-25T12:00:00",
-        "userId": 3,
-        "categoryId": 3
-      },
-      {
-        "id": 4,
-        "title": "Family Vacation",
-        "description": "Trip to the mountains",
-        "startTime": "2024-12-01T08:00:00",
-        "endTime": "2024-12-07T18:00:00",
-        "createdAt": "2024-09-10T12:00:00",
-        "updatedAt": "2024-09-15T12:00:00",
-        "userId": 4,
-        "categoryId": 4
-      },
-      {
-        "id": 5,
-        "title": "Diana's Party",
-        "description": "Birthday party for Diana",
-        "startTime": "2024-11-15T19:00:00",
-        "endTime": "2024-11-15T23:00:00",
-        "createdAt": "2024-09-08T14:00:00",
-        "updatedAt": "2024-09-20T10:00:00",
-        "userId": 5,
-        "categoryId": 5
-      },
-      {
-        "id": 6,
-        "title": "Business Meeting",
-        "description": "Annual budget review",
-        "startTime": "2024-10-05T09:00:00",
-        "endTime": "2024-10-05T12:00:00",
-        "createdAt": "2024-09-14T10:00:00",
-        "updatedAt": "2024-09-15T10:30:00",
-        "userId": 6,
-        "categoryId": 2
-      },
-      {
-        "id": 7,
-        "title": "Emily's Appointment",
-        "description": "Dental check-up",
-        "startTime": "2024-10-12T14:00:00",
-        "endTime": "2024-10-12T15:00:00",
-        "createdAt": "2024-09-11T11:00:00",
-        "updatedAt": "2024-09-22T13:00:00",
-        "userId": 7,
-        "categoryId": 3
-      },
-      {
-        "id": 8,
-        "title": "Business Strategy Meeting",
-        "description": "Discussion on Q4 goals",
-        "startTime": "2024-09-30T09:00:00",
-        "endTime": "2024-09-30T10:30:00",
-        "createdAt": "2024-09-05T09:00:00",
-        "updatedAt": "2024-09-15T10:00:00",
-        "userId": 8,
-        "categoryId": 2
-      },
-      {
-        "id": 9,
-        "title": "George's Party",
-        "description": "Celebrating George's 40th",
-        "startTime": "2024-10-18T19:00:00",
-        "endTime": "2024-10-18T23:00:00",
-        "createdAt": "2024-09-12T12:00:00",
-        "updatedAt": "2024-09-15T14:00:00",
-        "userId": 9,
-        "categoryId": 5
-      },
-      {
-        "id": 10,
-        "title": "Helen's Appointment",
-        "description": "Eye check-up",
-        "startTime": "2024-10-20T09:00:00",
-        "endTime": "2024-10-20T10:00:00",
-        "createdAt": "2024-09-11T10:00:00",
-        "updatedAt": "2024-09-20T12:00:00",
-        "userId": 10,
-        "categoryId": 3
-      },
-      {
-        "id": 11,
-        "title": "Ian's Vacation",
-        "description": "Beach trip",
-        "startTime": "2024-11-02T08:00:00",
-        "endTime": "2024-11-06T18:00:00",
-        "createdAt": "2024-09-01T15:00:00",
-        "updatedAt": "2024-09-18T10:00:00",
-        "userId": 11,
-        "categoryId": 4
-      },
-      {
-        "id": 12,
-        "title": "Jack's Business Meeting",
-        "description": "Strategy session",
-        "startTime": "2024-10-08T10:00:00",
-        "endTime": "2024-10-08T12:00:00",
-        "createdAt": "2024-09-08T09:00:00",
-        "updatedAt": "2024-09-15T10:00:00",
-        "userId": 12,
-        "categoryId": 2
-      }
-    ]
-  }
-  
+  "groups": [
+    {
+      "id": 1,
+      "name": "Club Alpha"
+    },
+    {
+      "id": 2,
+      "name": "The Gathering"
+    },
+    {
+      "id": 3,
+      "name": "The Adventurers"
+    },
+    {
+      "id": 4,
+      "name": "Creative Minds"
+    },
+    {
+      "id": 5,
+      "name": "Dynamic Duo"
+    }
+  ],
+  "userGroups": [
+    {
+      "id": 1,
+      "userId": 1,
+      "groupId": 1
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "groupId": 2
+    },
+    {
+      "id": 3,
+      "userId": 2,
+      "groupId": 1
+    },
+    {
+      "id": 4,
+      "userId": 3,
+      "groupId": 2
+    },
+    {
+      "id": 5,
+      "userId": 4,
+      "groupId": 3
+    },
+    {
+      "id": 6,
+      "userId": 5,
+      "groupId": 1
+    },
+    {
+      "id": 7,
+      "userId": 6,
+      "groupId": 4
+    },
+    {
+      "id": 8,
+      "userId": 7,
+      "groupId": 5
+    },
+    {
+      "id": 9,
+      "userId": 8,
+      "groupId": 2
+    },
+    {
+      "id": 10,
+      "userId": 9,
+      "groupId": 4
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Birthday"
+    },
+    {
+      "id": 2,
+      "name": "Meeting"
+    },
+    {
+      "id": 3,
+      "name": "Appointment"
+    },
+    {
+      "id": 4,
+      "name": "Vacation"
+    },
+    {
+      "id": 5,
+      "name": "Party"
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "title": "John's Birthday",
+      "description": "Celebrating John's 30th birthday",
+      "start": "2024-09-27",
+      "end": "2024-09-27",
+      "time": "18:00",
+      "recurring": false,
+      "frequency": "daily",
+      "createdAt": "2024-09-01",
+      "userId": 1,
+      "categoryId": 1
+    },
+    {
+      "id": 2,
+      "title": "Project Meeting",
+      "description": "Discussing the final project details",
+      "start": "2024-09-28",
+      "end": "2024-09-28",
+      "time": "10:00",
+      "recurring": false,
+      "frequency": "weekly",
+      "createdAt": "2024-09-10",
+      "userId": 2,
+      "categoryId": 2
+    },
+    {
+      "id": 3,
+      "title": "Routine Doctor's Appointment",
+      "description": "Routine checkup",
+      "start": "2024-10-01",
+      "end": "2024-10-01",
+      "time": "09:00",
+      "recurring": false,
+      "frequency": "daily",
+      "createdAt": "2024-09-20",
+      "userId": 3,
+      "categoryId": 3
+    },
+    {
+      "id": 4,
+      "title": "Mountain Trip",
+      "description": "Family vacation to the mountains",
+      "start": "2024-12-01",
+      "end": "2024-12-07",
+      "time": "08:00",
+      "recurring": false,
+      "frequency": "daily",
+      "createdAt": "2024-09-10",
+      "userId": 4,
+      "categoryId": 4
+    },
+    {
+      "id": 5,
+      "title": "Diana's Party",
+      "description": "Diana's 30th Birthday Party",
+      "start": "2024-11-15",
+      "end": "2024-11-15",
+      "time": "19:00",
+      "recurring": false,
+      "frequency": "daily",
+      "createdAt": "2024-09-08",
+      "userId": 5,
+      "categoryId": 5
+    },
+    {
+      "id": 6,
+      "title": "Monthly Budget Review",
+      "description": "Review of this month's budget",
+      "start": "2024-10-05",
+      "end": "2024-10-05",
+      "time": "09:00",
+      "recurring": true,
+      "frequency": "monthly",
+      "createdAt": "2024-09-14",
+      "userId": 6,
+      "categoryId": 2
+    },
+    {
+      "id": 7,
+      "title": "Quarterly Strategy Meeting",
+      "description": "Discussion on Q4 goals",
+      "start": "2024-12-15",
+      "end": "2024-12-15",
+      "time": "11:00",
+      "recurring": true,
+      "frequency": "quarterly",
+      "createdAt": "2024-09-05",
+      "userId": 6,
+      "categoryId": 2
+    },
+    {
+      "id": 8,
+      "title": "Dental Check-up",
+      "description": "Check-up at the dentist",
+      "start": "2024-10-12",
+      "end": "2024-10-12",
+      "time": "14:00",
+      "recurring": false,
+      "frequency": "daily",
+      "createdAt": "2024-09-11",
+      "userId": 7,
+      "categoryId": 3
+    },
+    {
+      "id": 9,
+      "title": "Ian's Beach Vacation",
+      "description": "Vacation to the beach",
+      "start": "2024-11-02",
+      "end": "2024-11-06",
+      "time": "08:00",
+      "recurring": false,
+      "frequency": "daily",
+      "createdAt": "2024-09-01",
+      "userId": 11,
+      "categoryId": 4
+    },
+    {
+      "id": 10,
+      "title": "Helen's Eye Check-up",
+      "description": "Regular eye exam",
+      "start": "2024-10-20",
+      "end": "2024-10-20",
+      "time": "09:00",
+      "recurring": false,
+      "frequency": "daily",
+      "createdAt": "2024-09-11",
+      "userId": 10,
+      "categoryId": 3
+    },
+    {
+      "id": 11,
+      "title": "Strategy Session",
+      "description": "Company-wide strategy discussion",
+      "start": "2024-10-08",
+      "end": "2024-10-08",
+      "time": "11:00",
+      "recurring": true,
+      "frequency": "monthly",
+      "createdAt": "2024-09-08",
+      "userId": 12,
+      "categoryId": 2
+    },
+    {
+      "id": 12,
+      "title": "Jack's Networking Event",
+      "description": "Monthly networking event",
+      "start": "2024-10-14",
+      "end": "2024-10-14",
+      "time": "17:00",
+      "recurring": true,
+      "frequency": "monthly",
+      "createdAt": "2024-09-01",
+      "userId": 12,
+      "categoryId": 2
+    },
+    {
+      "id": 13,
+      "title": "Austin's Workshop",
+      "description": "Coding workshop for Austin",
+      "start": "2024-10-22",
+      "end": "2024-10-22",
+      "time": "09:00",
+      "recurring": false,
+      "frequency": "daily",
+      "createdAt": "2024-09-21",
+      "userId": 13,
+      "categoryId": 2
+    },
+    {
+      "id": 14,
+      "title": "Oliver's Appointment",
+      "description": "Routine health checkup",
+      "start": "2024-11-02",
+      "end": "2024-11-02",
+      "time": "11:00",
+      "recurring": false,
+      "frequency": "daily",
+      "createdAt": "2024-09-15",
+      "userId": 14,
+      "categoryId": 3
+    },
+    {
+      "id": 15,
+      "title": "Sophia's Party Planning",
+      "description": "Planning for party in December",
+      "start": "2024-12-05",
+      "end": "2024-12-05",
+      "time": "16:00",
+      "recurring": false,
+      "frequency": "daily",
+      "createdAt": "2024-09-10",
+      "userId": 15,
+      "categoryId": 5
+    },
+    {
+      "id": 16,
+      "title": "Sophia's Team Meeting",
+      "description": "Team strategy discussion",
+      "start": "2024-10-20",
+      "end": "2024-10-20",
+      "time": "14:00",
+      "recurring": false,
+      "frequency": "daily",
+      "createdAt": "2024-09-12",
+      "userId": 15,
+      "categoryId": 2
+    }
+  ]
+}
